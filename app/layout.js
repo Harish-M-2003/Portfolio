@@ -22,6 +22,9 @@ export default function RootLayout({ children }) {
       {/* <Earth/>   */}
 
         {children}
+        <footer>
+          <p className='text-white p-5 flex justify-center'>Made by<span className='font-bold pl-2'> Harish M</span></p>
+        </footer>
         </body>
     </html>
   )

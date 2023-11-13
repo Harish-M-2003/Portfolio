@@ -13,10 +13,10 @@ import PortfolioParticles from "./Components/PortfolioParticles";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
+      <PortfolioParticles/> 
       <HomeSection/>
       <AboutSection/>
       <SkillSet/>
-      <PortfolioParticles/> 
       <Projects/> 
       {/* <Certificates/>  */}
     </main>

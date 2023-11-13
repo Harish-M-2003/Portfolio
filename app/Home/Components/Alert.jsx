@@ -36,7 +36,7 @@ export default function Alert({action}){
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <Link href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
+              <Link target="_blank" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
                   
                   <AlertDialogAction>{action}</AlertDialogAction>
               </Link>

@@ -12,7 +12,7 @@ export default function AboutSection(){
             </div>
             <div className="h-screen flex flex-1 items-center p-5 text-center">
                 <p
-                className="text-white  max-md:text-xl md:text-2xl"
+                className="text-white  max-md:text-xl md:text-2xl tracking-widest"
                 style={{fontFamily : "Exo" , lineHeight : 1.5 }}
                 >
                     As a <span className="font-bold md:text-4xl">#Computer Science Student</span> at Chennai Institute of Technology,

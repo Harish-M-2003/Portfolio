@@ -1,5 +1,5 @@
 
-"use client";
+// "use client";
 
 import Image from "next/image";
 // import Link from "next/link";
@@ -22,8 +22,8 @@ import useDownloader from 'react-use-downloader';
 import { LogoBigScreen , LogoSmallScreen} from "./Components/Logo";
 
 export default function HomeSection(){
-    const [changeImage , setChangeImage] = useState(false);
-    const { size, elapsed, percentage, download, cancel, error, isInProgress } = useDownloader();
+    // const [changeImage , setChangeImage] = useState(false);
+    // const { size, elapsed, percentage, download, cancel, error, isInProgress } = useDownloader();
     // const fileUrl =require("../Harish-M.pdf");
     // const fileUrl = ""
     // const filename = 'Harish-M.pdf';
@@ -83,7 +83,7 @@ export default function HomeSection(){
                     </div>
                 </div>
                 <div className=" z-1 md:block hidden h-[50rem] w-[70rem] flex justify-end items-end">
-                    <LogoBigScreen changeImage={changeImage}  setChangeImage={setChangeImage}/>
+                    <LogoBigScreen/>
                 </div>
             </div>
         </div>

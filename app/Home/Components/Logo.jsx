@@ -1,30 +1,20 @@
 import Image from "next/image"
 
-export function LogoBigScreen({changeImage , setChangeImage}){
+export function LogoBigScreen(){
     return (
-        (changeImage)?
-                        
+       
             <Image
             alt="img" 
-            src={require("../../../pic4.png")} 
-            onMouseOut = {() => setChangeImage(false)} 
-            className="h-full"
+            src={require("../../../pic7.png")} 
             priority={true}
-            />
-        :
-            <Image
-            alt="img" 
-            src={require("../../../pic3.png")} 
-            priority={true}
-            className="h-full " 
-            onMouseOver={() => setChangeImage(true)}/>
+            className="h-full " />
     )
 }
 
 export function LogoSmallScreen(){
     return (
         // <Image style={{zIndex : 0.5}} alt="img" src={require("../../../india.jpg")}  width={800} className="opacity-[0.1] absolute"/>
-        <Image alt="img" priority={true} src={require("../../../pic3.png")}  className="h-full opacity-[0.5]"/>
+        <Image alt="img" priority={true} src={require("../../../pic7.png")}  className="h-full opacity-[0.5]"/>
 
     )
 }
