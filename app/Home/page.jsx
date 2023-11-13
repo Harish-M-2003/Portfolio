@@ -19,6 +19,7 @@ import { useState } from "react";
 // import Pic from "../../pin.png";
 
 import useDownloader from 'react-use-downloader';
+import { LogoBigScreen , LogoSmallScreen} from "./Components/Logo";
 
 export default function HomeSection(){
     const [changeImage , setChangeImage] = useState(false);
@@ -32,12 +33,11 @@ export default function HomeSection(){
                 <div className="max-md:hidden w-20"><p>aaskdjaskjd</p></div>
                 <div className="flex  text-white text-center flex-col gap-5 max-md:justify-center">
                     {/* <Image src={require("../india.jpg")} height={100} width={100}/> */}
-                    {/* <Image style={{zIndex : 0.5}} alt="img" src={require("../india.jpg")}  width={800} className="opacity-[0.1] absolute"/> */}
                      {/* <Earth/> */}
                      {/* <Globe/> */}
 
                     <div className=" md:hidden z-1 h-[50rem] w-[60rem] flex justify-end items-end relative">
-                        <Image alt="img" src={require("../../pic3.png")} className="h-full opacity-[0.5]"/>
+                        <LogoSmallScreen/>
                         {/* <ReactHoverImageFIlter image/> */}
                         
                         
@@ -83,14 +83,7 @@ export default function HomeSection(){
                     </div>
                 </div>
                 <div className=" z-1 md:block hidden h-[50rem] w-[70rem] flex justify-end items-end">
-                    {
-                        (changeImage)?
-                        
-                        <Image alt="img" src={require("../../pic4.png")} onMouseOut = {() => setChangeImage(false)} className="h-full" onClick={() => setChangeImage(!changeImage)}/>
-                        :
-                        <Image alt="img" src={require("../../pic3.png")} className="h-full " onMouseOver={() => setChangeImage(true)}/>
-
-                    }
+                    <LogoBigScreen changeImage={changeImage}  setChangeImage={setChangeImage}/>
                 </div>
             </div>
         </div>

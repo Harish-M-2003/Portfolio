@@ -15,6 +15,7 @@ export default function Projects(){
                 
             <Carousel 
                 className="rounded-lg max-md:p-10" 
+                showThumbs={false}
                 autoPlay 
                 infiniteLoop 
                 interval={1500}
@@ -33,6 +34,7 @@ export default function Projects(){
             </Carousel>
             <Carousel 
                 className="rounded-lg " 
+                showThumbs={false}
                 autoPlay 
                 infiniteLoop 
                 interval={1500}
