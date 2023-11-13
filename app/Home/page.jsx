@@ -11,14 +11,14 @@ import { BsArrowDownCircleFill } from "react-icons/bs";
 // import {BsGithub} from "react-icons/bs";
 // import {BsLinkedin} from "react-icons/bs";
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 // import Earth from "../Components/Earth";
 // import Globe from "react-globe.gl";
 
 // import { Button } from "@/components/ui/button";
 // import Pic from "../../pin.png";
 
-import useDownloader from 'react-use-downloader';
+// import useDownloader from 'react-use-downloader';
 import { LogoBigScreen , LogoSmallScreen} from "./Components/Logo";
 
 export default function HomeSection(){
