@@ -7,11 +7,11 @@ import Image from "next/image";
 
 export default function Projects(){
     return (
-        <div className="h-screen pt-10 flex flex-col w-screen">
+        <div className="md:h-screen flex flex-col w-screen">
             <div className="flex justify-center">
                 <h1 className="text-white text-4xl md:text-6xl" style={{fontFamily : "Orbitron"}}>Projects</h1>
             </div>
-            <div className="flex flex-1 max-md:flex-col items-center justify-center gap-10 rounded-lg md:m-10">
+            <div className="flex flex-1 max-md:hidden items-center justify-center gap-10 rounded-lg md:m-10">
                 
             <Carousel 
                 className="rounded-lg max-md:p-10" 

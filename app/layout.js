@@ -17,9 +17,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={` max-md:bg-black md:bg-gradient-to-l from-black  via-black via-40% to-gray-900 md:to-90%`}>
-      <Image priority={true} alt="img" src={require("../app/india.jpg")} style={{zIndex : 1}}  width={800} className="h-full z-1 opacity-[0.1] absolute fixed"/>
-      {/* <Earth/>   */}
+      <body className={` max-md:bg-black bg-gradient-to-l from-black  via-black via-40% to-gray-900 md:to-90% `}>
+      <Image 
+        priority={true} 
+        alt="img" 
+        src={require("../app/india.jpg")} 
+        style={{zIndex : 1}}  
+        width={800} 
+        className="md:h-full max-md:h-full z-1 opacity-[0.1] absolute fixed"
+      />
 
         {children}
         <footer>

@@ -10,7 +10,7 @@ export default function AboutSection(){
 
                 <h1 className="text-white text-4xl md:text-6xl" style={{fontFamily : "Orbitron"}}>About</h1>
             </div>
-            <div className="h-screen flex flex-1 items-center p-5 text-center">
+            <div className="h-screen flex flex-1 items-center p-5 md:text-center">
                 <p
                 className="text-white  max-md:text-xl md:text-2xl tracking-widest"
                 style={{fontFamily : "Exo" , lineHeight : 1.5 }}
