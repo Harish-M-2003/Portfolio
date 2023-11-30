@@ -28,9 +28,10 @@ export default function RootLayout({ children }) {
       />
 
         {children}
-        <footer>
-          <p className='text-white p-5 flex justify-center'>Made by<span className='font-bold pl-2'> Harish M</span></p>
-        </footer>
+        
+        <footer className="flex justify-center p-5">
+                <p className="text-white">Made By <span className="font-bold text-xl">Harish M</span>.</p>
+            </footer>
         </body>
     </html>
   )

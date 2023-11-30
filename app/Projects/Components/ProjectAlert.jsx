@@ -12,7 +12,7 @@ import {
   import Link from "next/link";
 
 
-export default function ProjectAlert({component , action}){
+export default function ProjectAlert({component , action , link}){
     return (
         <AlertDialog>
           <AlertDialogTrigger 
@@ -21,17 +21,24 @@ export default function ProjectAlert({component , action}){
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+              <AlertDialogTitle>Site Under Construction</AlertDialogTitle>
               <AlertDialogDescription>
-                This action Redirects you to github.
+                {/* This action Redirects you to github. */}
+                Site Under Development, please try again later.
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <Link href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
-                  
-                  <AlertDialogAction>{action}</AlertDialogAction>
-              </Link>
+              <AlertDialogAction>Cancel</AlertDialogAction>
+              {/* <AlertDialogCancel>Cancel</AlertDialogCancel> */}
+                  {/* <AlertDialogAction> */}
+                      {/* <Link className="max-md:w-screen" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
+                          {action}
+                      </Link> */}
+                      {/* <Link target="_blank" className="max-md:w-screen" href={link}>
+                          {action}
+                      </Link>
+                  </AlertDialogAction> */}
+              
             </AlertDialogFooter>
           </AlertDialogContent>
           </AlertDialog>

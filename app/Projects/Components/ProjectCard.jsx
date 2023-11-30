@@ -4,19 +4,25 @@
 import Image from "next/image"; 
 import ProjectAlert from "./ProjectAlert";
 
-export default function ProjectCard({title , body , image}){
+
+function Card({image , body , title , style}){
+  return (
+    <div className="text-white rounded-lg justify-center my-5 tracking-widest items-center flex flex-col hover:opacity-[0.5]">
+      <Image src={image} width={500} className={style}/>
+      <div className="p-5 rounded-b-xl w-[25rem]">
+        {/* <p className="text-2xl" style={{fontFamily : "Orbitron"}}>{title}</p> */}
+        <p className="text-gray-200 text-sm" style={{fontFamily : "Orbitron"}}>{body}</p>
+      </div>
+    </div>
+  )
+}
+
+export default function ProjectCard({title , body , image , style , link}){
     return (
       <ProjectAlert 
-          component ={
-          <div className="flex flex-col w-full rounded-t-xl">
-            <div className="flex w-full">
-                <Image property={true}  alt="project image" src={image} className="h-[15rem] w-[5rem] md:h-[20rem] md:w-full rounded-t-xl"  width={200}/>
-            </div>
-            <div className="text-gray-600 py-5 px-5 text-sm rounded-b-xl bg-white">
-                <p>A  python Like toy programming language developed using python.</p>
-            </div>
-          </div>
+          component ={<Card title = {title} body = {body} image={image} style={style}/>
         }
+        link={link}
         action= {"Github"}
       />
     );

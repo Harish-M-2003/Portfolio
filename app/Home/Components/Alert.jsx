@@ -18,12 +18,12 @@ export default function Alert({action}){
     return (
         <AlertDialog>
           <AlertDialogTrigger 
-            className="border flex items-center gap-5 bg-white text-black font-bold border-1 p-4 px-[2.5rem] hover:bg-transparent hover:text-white rounded-lg">
+            className="md:border flex items-center gap-5 bg-white text-black font-bold border-1 p-4 px-[2.5rem] hover:bg-transparent hover:text-white rounded-lg max-md:px-[2rem]">
               {
                 (action === "Github")?
-                  <BsGithub className=" text-2xl"/>
+                  <BsGithub className="max-md:text-3xl text-2xl"/>
                 :
-                  <BsLinkedin className=" text-2xl"/>
+                  <BsLinkedin className="max-md:text-3xl text-2xl"/>
               }
               {action}
           </AlertDialogTrigger>
@@ -31,15 +31,21 @@ export default function Alert({action}){
             <AlertDialogHeader>
               <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
               <AlertDialogDescription>
-                This action Redirects you to github.
+                This action Redirects you to {action}.
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogCancel>Cancel</AlertDialogCancel>
-              <Link target="_blank" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
+              {/* <Link target="_blank" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
                   
                   <AlertDialogAction>{action}</AlertDialogAction>
-              </Link>
+              </Link> */}
+                  
+                  <AlertDialogAction>
+                      <Link target="_blank" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
+                            {action}
+                      </Link>
+                  </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
           </AlertDialog>
