@@ -18,7 +18,7 @@ export default function HomeSection(){
                 <BsGithub className="text-2xl text-white"/>
             </nav>
             <div style={{zIndex : 1}} className="flex-1 flex flex-col items-center justify-evenly max:hidden md:hidden">
-                        <div className="flex flex-1 flex-col justify-end w-[90%] pt-[10rem]">
+                        <div className="flex flex-1 flex-col justify-end w-[90%] pt-[5rem]">
                             <h1 className="text-6xl text-white text-center" style={{fontFamily : "Orbitron"}}>
                                 The <span className="text-blue-300 text-4xl">#Science</span> of today is the <span className="text-blue-300 text-4xl">#technology</span> of tomorrow.
                             </h1>
@@ -27,7 +27,7 @@ export default function HomeSection(){
                                 <span className="max-md:text-lg" style={{fontFamily : "Orbitron"}}>- Edward Teller</span>
                             </div>
                         </div>
-                        <div className="flex items-end flex-1">
+                        <div className="flex items-center pt-[5rem] flex-1">
                             <div style={{zIndex : 1}} className="md:hidden md:flex-[0.9] flex items-center justify-end gap-5 z-3">
                                 <Alert action={"LinkedIn"}/>  
                                 <Link target="_blank" download href={"/Harish-M.pdf"} passHref  className="border flex items-center gap-5 bg-white text-black font-bold border-1 py-4 px-[2rem] hover:bg-transparent hover:text-white rounded-lg">
