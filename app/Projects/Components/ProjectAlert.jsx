@@ -21,23 +21,24 @@ export default function ProjectAlert({component , action , link}){
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Site Under Construction</AlertDialogTitle>
+              <AlertDialogTitle>🔍 Explore GitHub Repository</AlertDialogTitle>
               <AlertDialogDescription>
                 {/* This action Redirects you to github. */}
-                Site Under Development, please try again later.
+                Are you sure you want to visit the GitHub repository for this project?
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
               <AlertDialogAction>Cancel</AlertDialogAction>
               {/* <AlertDialogCancel>Cancel</AlertDialogCancel> */}
-                  {/* <AlertDialogAction> */}
+                  <AlertDialogAction>
                       {/* <Link className="max-md:w-screen" href={(action === "Github")?"https://github.com/Harish-M-2003":"linkedin"}>
                           {action}
                       </Link> */}
-                      {/* <Link target="_blank" className="max-md:w-screen" href={link}>
-                          {action}
+                      <Link target="_blank" className="max-md:w-screen" href={link}>
+                          {/* {action} */}
+                          {"Yes"}
                       </Link>
-                  </AlertDialogAction> */}
+                  </AlertDialogAction>
               
             </AlertDialogFooter>
           </AlertDialogContent>

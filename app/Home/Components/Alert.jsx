@@ -29,7 +29,7 @@ export default function Alert({action}){
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+              <AlertDialogTitle>🔍 Explore {action}?</AlertDialogTitle>
               <AlertDialogDescription>
                 This action Redirects you to {action}.
               </AlertDialogDescription>

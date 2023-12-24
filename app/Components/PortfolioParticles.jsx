@@ -78,7 +78,7 @@ export default function PortfolioParticles() {
                             enable: true,
                             area: 1000,
                         },
-                        value: 100,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.2,

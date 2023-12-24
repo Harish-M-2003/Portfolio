@@ -1,6 +1,11 @@
 // import { Inter } from 'next/font/google'
+// "use client";
+// import { Canvas } from '@react-three/fiber'
 import './globals.css'
 import Image from 'next/image'
+// import { OrbitControls } from '@react-three/drei'
+// import { Suspense } from 'react'
+// import Model from '@/public/Earth'
 // import ReactAudioPlayer from 'react-audio-player';
 // import Earth from './Components/Earth'
 
@@ -24,14 +29,14 @@ export default function RootLayout({ children }) {
         src={require("../app/india.jpg")} 
         style={{zIndex : 1}}  
         width={800} 
-        className="md:h-full max-md:h-full z-1 opacity-[0.1] absolute fixed"
+        className="md:h-full max-md:h-full opacity-[0.1] absolute"
       />
 
         {children}
         
-        <footer className="flex justify-center p-5">
+        {/* <footer className="flex justify-center p-5">
                 <p className="text-white">Made By <span className="font-bold text-xl">Harish M</span>.</p>
-            </footer>
+            </footer> */}
         </body>
     </html>
   )
