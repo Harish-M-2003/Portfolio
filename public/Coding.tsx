@@ -1,14 +1,21 @@
+// import { useRef, useState } from 'react';
+// import { useFrame } from '@react-three/fiber';
+// import { useGLTF } from '@react-three/drei';
+// import { GLTF } from 'three/examples/jsm/Addons.js';
 import { useRef, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, extend } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
-import { GLTF } from 'three/examples/jsm/Addons.js';
 
+import { Object3D, Mesh, SkinnedMesh, Group } from 'three'; // Import necessary Three.js classes
+
+// Extend ReactThreeFiber namespace to add custom components or features
+extend({ Object3D, Mesh, SkinnedMesh, Group });
 interface ModelProps {
   // Define your prop types here
 }
 
 const Model: React.FC<ModelProps> = (props) => {
-  const { nodes, materials } : any = useGLTF('/coding.gltf') as GLTF;
+  const { nodes, materials } : any = useGLTF('/coding.gltf') as any;
 
   const modelRef = useRef<any>(); // Adjust the type according to your model's ref type
   const [rotationAxis, setRotationAxis] = useState<[number, number, number]>([Math.random(), Math.random(), Math.random()]);
