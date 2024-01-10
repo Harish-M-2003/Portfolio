@@ -5,7 +5,7 @@ import { BsArrowDownCircleFill } from "react-icons/bs";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import Model from "@/public/Coding";
+import {Model} from "@/public/Coding";
 import { OrbitControls } from "@react-three/drei";
 import Image from "next/image";
 

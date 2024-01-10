@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import HomeSection from './landing/page'
 import Projects from './Projects//Projects'
 import SkillSet from "./Skills/page";
