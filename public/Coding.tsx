@@ -6,12 +6,13 @@ License: CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
 Source: https://sketchfab.com/3d-models/lost-programmer-43d32e4f459f4857a054579da61bb3d6
 Title: Lost Programmer
 */
-
+"use client"
 import * as THREE from 'three'
 import React, { useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 import { useFrame } from '@react-three/fiber'
+
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -36,6 +37,7 @@ type GLTFResult = GLTF & {
   }
   animations: any[]
 }
+
 
 type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicElements['mesh'] | JSX.IntrinsicElements['skinnedMesh'] | JSX.IntrinsicElements['bone']>>
 
