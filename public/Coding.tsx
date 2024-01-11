@@ -58,6 +58,7 @@ export function Model() {
   });
 
   return (
+    <div>
     <group dispose={null} ref={group}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group position={[0, 0.752, -0.086]} rotation={[1.263, 0, 0]} scale={1.5}>
@@ -75,6 +76,7 @@ export function Model() {
         <mesh geometry={nodes.bool1185_0.geometry} material={materials.Material} position={[2.403, 0.752, -0.428]} rotation={[-0.464, 0.296, -0.932]} scale={0.106} />
       </group>
     </group>
+    </div>
   )
 }
 
