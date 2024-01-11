@@ -78,12 +78,14 @@ export default function HomeSection() {
         </div>
       </div>
       <div className="w-full">
-        <Canvas className="h-[100vh]">
+       
+          <Suspense fallback={<p>Loading</p>}>
+          <Canvas className="h-[100vh]">
           <OrbitControls enableZoom={false} />
-          {/* <Suspense fallback={<p className="text-white">Loading</p>}> */}
             <Model />
-          {/* </Suspense> */}
-        </Canvas>
+            </Canvas>
+
+          </Suspense>
       </div>
     </div>
   );
