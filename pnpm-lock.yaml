@@ -47,6 +47,9 @@ dependencies:
   react-icons:
     specifier: ^5.0.0
     version: 5.0.0(react@18.2.0)
+  react-three-fiber:
+    specifier: ^6.0.13
+    version: 6.0.13(react-dom@18.2.0)(react@18.2.0)(three@0.160.0)
   tailwind-merge:
     specifier: ^2.2.0
     version: 2.2.0
@@ -3577,6 +3580,29 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.6.2
+    dev: false
+
+  /react-three-fiber@6.0.13(react-dom@18.2.0)(react@18.2.0)(three@0.160.0):
+    resolution: {integrity: sha512-uShQnkMVLvnzwf3YzY9mnzCnpmLpvTQkc0ycrtwk8fyjXmZt2695tLn3tufPF6uxq06UKJRKJcjCVCMXyUcEPQ==}
+    deprecated: react-three-fiber has been deprecated, please use @react-three/fiber from now on
+    peerDependencies:
+      react: '>=17.0'
+      react-dom: '>=17.0'
+      three: '>=0.126'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+    dependencies:
+      '@react-three/fiber': 8.15.13(react-dom@18.2.0)(react@18.2.0)(three@0.160.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      three: 0.160.0
+    transitivePeerDependencies:
+      - expo
+      - expo-asset
+      - expo-file-system
+      - expo-gl
+      - react-native
     dev: false
 
   /react-use-measure@2.1.1(react-dom@18.2.0)(react@18.2.0):

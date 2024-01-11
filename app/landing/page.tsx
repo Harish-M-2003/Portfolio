@@ -8,6 +8,9 @@ import { Canvas } from "@react-three/fiber";
 import {Model} from "@/public/Coding";
 import { OrbitControls } from "@react-three/drei";
 import Image from "next/image";
+import { extend } from 'react-three-fiber';
+
+extend({Model});
 
 export default function HomeSection() {
   return (
@@ -77,9 +80,9 @@ export default function HomeSection() {
       <div className="w-full">
         <Canvas className="h-[100vh]">
           <OrbitControls enableZoom={false} />
-          <Suspense fallback={<p className="text-white">Loading</p>}>
+          {/* <Suspense fallback={<p className="text-white">Loading</p>}> */}
             <Model />
-          </Suspense>
+          {/* </Suspense> */}
         </Canvas>
       </div>
     </div>
