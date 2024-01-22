@@ -57,17 +57,17 @@ function SmallScreenComponents() {
           <SiExpress className="text-white text-5xl" />
           <p className="text-white text-lg">Express</p>
         </div>
-        <div className="flex flex-col items-center gap-5">
+        {/* <div className="flex flex-col items-center gap-5">
           <BiLogoFlask className="text-white text-5xl" />
           <p className="text-white text-lg">Flask</p>
-        </div>
+        </div> */}
       </div>
-      <div className="flex gap-20 md:hidden">
+      {/* <div className="flex gap-20 md:hidden">
         <div className="flex flex-col items-center gap-5">
           <DiDjango className="text-white text-5xl" />
           <p className="text-white text-lg">Django</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -112,14 +112,14 @@ function BigScreenComponenets() {
           <SiExpress className="text-white text-8xl" />
           <p className="text-white text-xl">Express</p>
         </div>
-        <div className="flex flex-col items-center gap-5">
+        {/* <div className="flex flex-col items-center gap-5">
           <BiLogoFlask className="text-white text-8xl" />
           <p className="text-white text-xl">Flask</p>
         </div>
         <div className="flex flex-col items-center gap-5">
           <DiDjango className="text-white text-8xl" />
           <p className="text-white text-xl">Django</p>
-        </div>
+        </div> */}
       </div>
     </>
   );

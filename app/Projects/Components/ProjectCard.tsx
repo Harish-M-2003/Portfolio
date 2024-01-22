@@ -12,7 +12,8 @@ function Card({ image, body, title, style } : any) {
         activeOffset={40}
         shadowScale={1.05}
       >
-        <Image src={image} width={500} className={style} alt="img"/>
+        <Image 
+         draggable={false} src={image} width={500} className={style} alt="img"/>
       </Atropos>
         <div data-atropos-offset="5" className="p-5 rounded-b-xl w-[25rem]">
           <p

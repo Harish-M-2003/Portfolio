@@ -3,8 +3,17 @@ import HomeSection from './landing/page'
 import Projects from './Projects//Projects'
 import SkillSet from "./Skills/page";
 import AboutSection from './About/AboutSection';
+// import Particels from "react-particles-js";
+import Particles from "react-particles";
+import type { Engine } from "@tsparticles/engine";
+import { loadSlim } from "@tsparticles/slim";
 
 export default function Home() {
+
+
+
+  // const options = {}
+
   return (
     <main className="flex flex-col items-center">
       {/* <div className="h-screen"> */}
@@ -13,6 +22,8 @@ export default function Home() {
       <AboutSection />
       <SkillSet/>
       <Projects />
+      {/* <Particels/> */}
+      {/* <Particles options={options} init={this.customInit} /> */}
       
       
       {/* </div> */}

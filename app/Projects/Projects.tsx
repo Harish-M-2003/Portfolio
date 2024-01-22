@@ -8,7 +8,7 @@ export default function Projects() {
     <div className="flex flex-col w-screen h-screen pt-5">
       <div className="flex justify-center pb-10">
         <h1
-          className="text-white text-4xl"
+          className="text-white text-6xl max-md:text-4xl"
           style={{ fontFamily: "Orbitron" }}
         >
           Projects

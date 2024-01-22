@@ -45,7 +45,7 @@ export function Model() {
   const { nodes, materials } = useGLTF('/coding.glb') as GLTFResult
   const group : any = useRef<THREE.Group>();
   const [rotationAxis, setRotationAxis] = useState<[number, number, number]>([Math.random(), Math.random(), Math.random()]);
-  const [rotationSpeed, setRotationSpeed] = useState<number>(0.003);
+  const [rotationSpeed, setRotationSpeed] = useState<number>(0.007);
 
   // Use useFrame to update the rotation in each frame
   useFrame(() => {

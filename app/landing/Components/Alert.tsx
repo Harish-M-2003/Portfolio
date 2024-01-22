@@ -17,8 +17,9 @@ import {BsLinkedin} from "react-icons/bs";
 export default function Alert({action} : any){
     return (
         <AlertDialog>
-          <AlertDialogTrigger 
-            className="md:border flex items-center gap-5 bg-white text-black font-bold border-1 p-4 px-[2.5rem] hover:bg-transparent hover:text-white rounded-lg max-md:px-[2rem]">
+          <AlertDialogTrigger
+          style={{fontFamily : "Orbitron"}} 
+            className="border md:px-20  flex items-center gap-5  font-bold border-1 p-4 px-[2rem] text-white rounded-lg max-md:px-[1.5rem]">
               {
                 (action === "Github")?
                   <BsGithub className="max-md:text-3xl text-2xl"/>
