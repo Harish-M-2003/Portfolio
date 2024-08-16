@@ -1,5 +1,6 @@
 "use client";
 import Alert from "./Components/Alert";
+
 import { BsArrowDownCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -7,9 +8,9 @@ import { Canvas } from "@react-three/fiber";
 import { Model } from "@/public/Coding";
 import { OrbitControls } from "@react-three/drei";
 import Image from "next/image";
-import { extend } from "react-three-fiber";
+// import { extend } from "react-three-fiber";
 
-extend({ Model });
+// extend({ Model });
 
 export default function HomeSection() {
   return (
@@ -34,12 +35,13 @@ export default function HomeSection() {
               <br />
             </h1>
             <div className="text-center">
-              <span className="text-xl text-white font-[100]">LEARN SOMETHING ABOUT EVERYTHING AND EVERYTHING ABOUT SOMETHING</span>
+              {/* <span className="text-xl text-white font-[100]">LEARN SOMETHING ABOUT EVERYTHING AND EVERYTHING ABOUT SOMETHING</span> */}
+              <span className="text-2xl text-gray-400 font-[100]">IF WE WANT TO CRACK A SYSTEM , WE NEED TO UNDERSTAND THE SYSTEM</span>
             </div>
             <div className="flex justify-between pt-19 p-2 z-10 w-full gap-2">
               <Link
                 target="_blank"
-                href={"#"}
+                href={"https://linkedin.com/in/2003-harish"}
                 className="border border-gray-600 hover:border-gray-300 text-white flex items-center gap-5 text-black font-bold border-1 p-4 px-8 pr-14 bg-transparent  rounded-lg"
               >
                 <BsLinkedin className="max-sm:text-3xl" />
@@ -48,7 +50,7 @@ export default function HomeSection() {
               </Link>
               <Link
                 target="_blank"
-                href={"#"}
+                href={"https://github.com/Harish-M-2003"}
                 className="border border-gray-600 hover:border-gray-300 text-white flex items-center gap-5 text-black font-bold border-1 p-4 px-8 pr-14 bg-transparent rounded-lg"
               >
                 <BsGithub className="max-sm:text-3xl" />
